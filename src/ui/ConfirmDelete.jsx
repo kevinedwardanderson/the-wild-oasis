@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Button from "./Button";
 import Heading from "./Heading";
-import { useContext } from "react";
 
 const StyledConfirmDelete = styled.div`
   width: 40rem;
@@ -22,8 +21,6 @@ const StyledConfirmDelete = styled.div`
 `;
 
 function ConfirmDelete({ resourceName, onConfirm, disabled, onCloseModal }) {
-  // const { close } = useContext(ModalContext);
-
   return (
     <StyledConfirmDelete>
       <Heading as="h3">Delete {resourceName}</Heading>
